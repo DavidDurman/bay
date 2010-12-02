@@ -1,0 +1,36 @@
+Project: Learning Bayes network structure from data
+Author: David Durman, 2008
+
+REQUIREMENTS:
+
+- GNU/Linux OS
+- g++ 4.1.2 (older versions were not tested)
+- dlib 17.11 (older versions were not tested) [http://dlib.net]
+- galib 2.4.7 (older versions were not tested) [http://lancet.mit.edu/ga/dist/]
+
+OPTIONAL:
+
+(- python 2.4 (older versions were not tested))
+
+
+dlib and galib are supposed to be in standard locations:
+
+- dlib: /usr/local/include/dlib
+- galib: /usr/local/include/ga, /usr/local/lib/
+
+but you can use other locations after modifying makefile.
+
+
+INSTALL:
+
+1. unpack dlib library and copy the dlib folder to /usr/local/include/
+2. unpack galib library and copy the ga folder to /usr/local/include/
+3. run make inside the galib unpacked directory and copy the ga/libga.a to /usr/local/lib/
+4. run make inside the bay src folder
+
+That's it.
+
+Then try: 
+	./baybuild -h
+	./baypredict -h
+	(./bayname.py)
